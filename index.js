@@ -1,12 +1,4 @@
 window.onload = () => {
-  const boutton_no_bg = document.querySelector(".boutton_no_bg");
-  console.log(boutton_no_bg);
-  boutton_no_bg.addEventListener("mouseenter", () => {
-    boutton_no_bg.classList.add("shadow_boutton_no_bg_class");
-  });
-  boutton_no_bg.addEventListener("mouseenter", () => {
-    boutton_no_bg.classList.remove("shadow_boutton_no_bg_class");
-  });
   const tab_boutton = document.querySelectorAll(".boutton");
   const tab_boutton_no_bg = document.querySelectorAll(".boutton_no_bg");
   console.log("tab_boutton is", tab_boutton);
