@@ -1,4 +1,5 @@
 window.onload = () => {
+  // --------------- shadow survole de boutton ----------------------
   const tab_boutton = document.querySelectorAll(".boutton");
   const tab_boutton_no_bg = document.querySelectorAll(".boutton_no_bg");
   console.log("tab_boutton is", tab_boutton);
@@ -82,4 +83,78 @@ window.onload = () => {
         break;
     }
   }
+  //  ---------------------------------------------------------------
+
+  // --------------- shadow survole des icons ----------------------
+  const iFooter = document.querySelectorAll("footer i");
+  console.log(iFooter.length);
+  for (let i = 0; i < iFooter.length; i++) {
+    switch (iFooter[i]) {
+      case iFooter[0]:
+        iFooter[0].addEventListener("mouseenter", () => {
+          iFooter[0].classList.add("icon_survol");
+        });
+        iFooter[0].addEventListener("mouseout", () => {
+          iFooter[0].classList.remove("icon_survol");
+        });
+        break;
+      case iFooter[1]:
+        iFooter[1].addEventListener("mouseenter", () => {
+          iFooter[1].classList.add("icon_survol");
+        });
+        iFooter[1].addEventListener("mouseout", () => {
+          iFooter[1].classList.remove("icon_survol");
+        });
+        break;
+      case iFooter[2]:
+        iFooter[2].addEventListener("mouseenter", () => {
+          iFooter[2].classList.add("icon_survol");
+        });
+        iFooter[2].addEventListener("mouseout", () => {
+          iFooter[2].classList.remove("icon_survol");
+        });
+        break;
+      case iFooter[3]:
+        iFooter[3].addEventListener("mouseenter", () => {
+          iFooter[3].classList.add("icon_survol");
+        });
+        iFooter[3].addEventListener("mouseout", () => {
+          iFooter[3].classList.remove("icon_survol");
+        });
+        break;
+    }
+  }
+  // ------------------------------------------------------------------
+
+  // --------------- TODO ----------------
+  const navLi = document.querySelectorAll("nav li");
+  console.log(navLi.length);
+
+  // ------------------Animation titre h1 ---------------------
+  // onload-----
+  // ------- .grandTitre --------
+  document.querySelector(".grandTitre h1").classList.add("positionInit1");
+  document.querySelector(".grandTitre h6").classList.add("fade1");
+
+  // ------------- .auCinema ---------
+  setTimeout(() => {
+    document.querySelector(".auCinema h4").classList.add("positionInit1");
+  }, 500);
+
+  // ---------------- .devientSpiderman --------------
+
+  document.querySelector(".deviensSpiderman h4").classList.add("positionInit0");
+  document.querySelector(".inscritToi h4").classList.add("positionInit0");
+  // scroll---------------
+  window.addEventListener("scroll", (e) => {
+    console.log(scrollY);
+    if (scrollY > 803) {
+      document
+        .querySelector(".deviensSpiderman h4")
+        .classList.add("positionInit1");
+    }
+    if (scrollY > 8000) {
+      document.querySelector(".inscritToi h4").classList.add("positionInit1");
+    }
+  });
 };

@@ -7,3 +7,28 @@
     box-shadow : 2px 5px 16px 0px #ffffff;
     color: var(--prime-black);
 }
+.icon_survol {
+    color: #ffffff !important;
+    
+}
+
+.positionInit0{
+    
+    transform: translateX(-500%);
+    opacity: 0.5;
+    transition: 1s;
+    
+}
+.positionInit1 {
+    transform: translateX(0) !important;
+    opacity: 01 !important;
+    visibility: visible !important;
+}
+
+.fade0 {
+opacity: 0 ;
+transition: 1s;
+}
+.fade1 {
+    opacity: 1 ;
+}
