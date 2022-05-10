@@ -1,0 +1,9 @@
+.shadow_boutton_class {
+    box-shadow : 2px 5px 16px 0px #ffffff;
+    color : var(--prime-white);
+    background-color: var(--prime-red);
+}
+.shadow_boutton_no_bg_class {
+    box-shadow : 2px 5px 16px 0px #ffffff;
+    color: var(--prime-black);
+}
